@@ -172,12 +172,6 @@
             this.input.value = '';
           })
           .catch(() => alert('There was an error. Try again.'));
-
-        this.props.store.dispatch(addTodoAction({
-          id: generateId(),
-          name,
-          complete: false,
-        }));
       }
       
       removeItem = (todo) => {
